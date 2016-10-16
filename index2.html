@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate credit on React</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/app2.css">
+
+</head>
+<body>
+    <div id="root">
+        <h1 class="text-center main-caption">Кредитний калькулятор</h1>
+        <form id="credit-form" class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-5 control-label">Сумма кредита</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-5 control-label">Срок кредита в месяцах</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-5 control-label">Процентная ставка в год</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-5 control-label">Вид платежа</label>
+            <div class="col-sm-7">
+              <select class="form-control">
+                <option>дифференцированный</option>
+                <option>аннуитетный</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <button class="btn btn-lg btn-primary btn_calculate">Рассчитать</button>
+            </div>
+          </div>
+        </form>
+        <section id="result-calculeted">
+            <h2 class="text-center">График платежей</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>№ платежа</th>
+                        <th>Остаток задолженности</th>
+                        <th>Сумма платежа</th>
+                        <th>Основной долг</th>
+                        <th>Начисленые проценты</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>102</td>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>105</td>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>788</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>105</td>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>788</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>105</td>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>788</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>105</td>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>788</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>105</td>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>788</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Итого по кредиту</th>
+                        <td>83</td>
+                        <td>7</td>
+                        <td>788</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/react/react.js"></script>
+    <script src="js/react/react-dom.js"></script>
+    <script src="js/react/browser.min.js"></script>
+    <script src="js/EventEmitter.js"></script>
+    <script type="text/babel" src="js/app2.js"></script>
+</body>
+</html>

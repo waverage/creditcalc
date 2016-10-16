@@ -1,0 +1,39 @@
+#root {
+    width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.main-caption {
+    margin-bottom: 30px;
+}
+
+#credit-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.btn_calculate {
+    display: block;
+    margin: 0 auto;
+}
+
+/*--------------- result-calculeted ------------------ */
+
+#result-calculeted {
+    margin-top: 30px;
+}
+
+.table tbody tr:nth-child(even) {
+   background-color: #eee;
+}
+
+.table tr, .table th {
+    text-align: center;
+}
+
+
+/*--------------- end result-calculeted ------------------ */
